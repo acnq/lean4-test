@@ -1,6 +1,6 @@
-[submodule "lean4-test/p1"]
-    path = lean4-test/p1
-    url = https://github.com/acnq/p1
-[submodule "lean4-test/p2"]
-    path = lean4-test/p2
-    url = https://github.com/acnq/p2
+[submodule "p1"]
+	path = p1
+	url = https://github.com/acnq/p1
+[submodule "p2"]
+	path = p2
+	url = https://github.com/acnq/p2
