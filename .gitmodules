@@ -1,0 +1,9 @@
+[submodule "p1"]
+	path = p1
+	url = https://github.com/acnq/p1
+[submodule "p2"]
+	path = p2
+	url = https://github.com/acnq/p2
+[submodule "p3"]
+	path = p3
+	url = https://github.com/acnq/p3
