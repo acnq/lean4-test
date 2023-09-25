@@ -18,3 +18,25 @@ def f2 (b1 b2 : Bool) : IO Unit := do
 
 #eval f2 true false
 
+-- joint-points 
+def f3 (b1 b2 : Bool) : IO Unit := do 
+  let jp1 xs ys := IO.println s!"xs: {xs}, ys: {ys}"
+  let jp2 xs ys := if b2 then jp1 (xs.push 1) ys else jp1 xs (ys.push 1)
+  let xs := #[]
+  let ys := #[]
+  if b1 then jp2 (xs.push 0) ys else jp2 xs (ys.push 0)
+
+#eval f3 true false 
+
+
+def f4 (b1 b2: Bool) : IO Unit := do 
+  let mut xs := #[]
+  if b1 then xs := xs.push 0
+  if b2 then xs := xs.push 1 
+  IO.println xs 
+
+#eval f4 true true
+
+
+
+
